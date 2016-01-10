@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+<!-- android:icon="~" 넣어야함-->
+
+    <item android:title="프로필"
+        android:id="@+id/nav_item_profile"/>
+
+    <item android:title="타임라인"
+        android:id="@+id/nav_item_timeline"
+        />
+
+    <item android:title="타이머"
+        android:id="@+id/nav_item_timer"
+        />
+
+    <item android:title="플래너"
+        android:id="@+id/nav_item_planer"
+        />
+
+    <item android:title="스터디그룹"
+        android:id="@+id/nav_item_studygroup"
+        />
+
+
+
+
+
+
+</menu>
