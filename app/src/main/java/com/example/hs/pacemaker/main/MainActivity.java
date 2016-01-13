@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 
 import com.example.hs.pacemaker.R;
-import com.example.hs.pacemaker.planer.PlanerTab;
+import com.example.hs.pacemaker.planer.PlannerTab;
 import com.example.hs.pacemaker.profile.ProfileFragment;
 import com.example.hs.pacemaker.studygroup.StudygroupTab;
 import com.example.hs.pacemaker.timeline.TabFragment;
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (menuItem.getItemId() == R.id.nav_item_planer) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
-                    xfragmentTransaction.replace(R.id.containerView, new PlanerTab()).commit();
+                    xfragmentTransaction.replace(R.id.containerView, new PlannerTab()).commit();
                 }
                 if (menuItem.getItemId() == R.id.nav_item_studygroup) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();

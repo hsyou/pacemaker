@@ -11,14 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.example.hs.pacemaker.R;
-import com.example.hs.pacemaker.timeline.FriendFragment;
-import com.example.hs.pacemaker.timeline.GroupFragment;
-import com.example.hs.pacemaker.timeline.TimelineSetup;
 
 /**
  * Created by hs on 2016-01-09.
  */
-public class PlanerTab extends Fragment {
+public class PlannerTab extends Fragment {
 
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
@@ -71,7 +68,7 @@ public class PlanerTab extends Fragment {
         {
             switch (position){
                 case 0 : return new ScheduleFragment();
-                case 1 : return new PlanerSetup();
+                case 1 : return new PlannerSetup();
             }
             return null;
         }

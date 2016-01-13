@@ -10,7 +10,7 @@ import com.example.hs.pacemaker.R;
 /**
  * Created by hs on 2016-01-09.
  */
-public class PlanerSetup extends Fragment {
+public class PlannerSetup extends Fragment {
 
     @Nullable
     @Override
