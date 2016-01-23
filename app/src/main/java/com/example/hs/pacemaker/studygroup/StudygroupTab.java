@@ -89,9 +89,9 @@ public class StudygroupTab extends Fragment {
 
             switch (position){
                 case 0 :
-                    return "일정";
+                    return "스터디 찾기";
                 case 1 :
-                    return "설정";
+                    return "스터디 등록";
             }
             return null;
         }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorDivide"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/card_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="card_name"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/card_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="card_region"
+            android:textSize="12dp"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:id="@+id/card_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="card_day"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="bold"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/card_abstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="card_abstract"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="12dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자세히 보기"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:textSize="12dp"/>
+
+</LinearLayout>

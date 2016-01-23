@@ -15,6 +15,10 @@ public class RegisterFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_layout, container, false);
+        View rootView = inflater.inflate(R.layout.register_study, container, false);
+
+
+
+        return rootView;
     }
 }
