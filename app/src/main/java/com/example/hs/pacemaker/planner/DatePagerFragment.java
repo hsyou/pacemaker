@@ -1,4 +1,4 @@
-package com.example.hs.pacemaker.planer;
+package com.example.hs.pacemaker.planner;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

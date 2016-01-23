@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 
 import com.example.hs.pacemaker.R;
-import com.example.hs.pacemaker.planer.PlannerTab;
+import com.example.hs.pacemaker.planner.PlannerTab;
 import com.example.hs.pacemaker.profile.ProfileFragment;
 import com.example.hs.pacemaker.studygroup.StudygroupTab;
 import com.example.hs.pacemaker.timeline.TabFragment;
