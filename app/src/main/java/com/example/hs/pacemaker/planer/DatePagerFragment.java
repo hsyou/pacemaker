@@ -18,10 +18,7 @@ public class DatePagerFragment extends Fragment {
     TextView pagerYear, pagerMonth;
 
     public DatePagerFragment (){
-//        int position = getArguments().getInt("position");
         int position = 3;
-//        year += position/12;
-//        month += position%12;
     }
 
 
@@ -29,7 +26,6 @@ public class DatePagerFragment extends Fragment {
         View x = inflater.inflate(R.layout.planner_datepager_layout,null);
         pagerYear = (TextView)x.findViewById(R.id.planner_pager_year);
         pagerMonth = (TextView)x.findViewById(R.id.planner_pager_month);
-
 
         pagerYear.setText(Integer.toString(year));
         pagerMonth.setText(Integer.toString(month));

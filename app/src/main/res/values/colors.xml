@@ -3,5 +3,6 @@
     <color name="colorPrimary">#65C6BB</color>
     <color name="colorUnderLine">#F2F2F2</color>
     <color name="colorDivide">#FFFFFF</color>
-
+    <color name="colorDarkGray">#606060</color>
+    <color name="colorClear">#00000000</color>
 </resources>
