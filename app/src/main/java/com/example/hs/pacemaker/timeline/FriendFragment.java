@@ -48,9 +48,9 @@ public class FriendFragment extends Fragment {
 
         List<Recycler_item> items=new ArrayList<>();
         Recycler_item[] item=new Recycler_item[5];
-        item[0]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test","#hash #hash");
-        item[1]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test",null);
-        item[2]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test",null);
+        item[0]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"1234567890asdasdasdasdzxczxczxczxcvbnvbnvbnvbnfghfghfghfghrtyrtyrtyrtyuiouiouiouiojkljkljkljklqweqweqweqwehjweacvbuygrvebgqverwyugbqvrewyugbqecwrybugcqewrybugcqrewygbueqwrygbui","#hash #hash");
+        item[1]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test","#hash #hash");
+        item[2]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test","#hashascascascascascascascascascascasc #hash");
         item[3]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test",null);
         item[4]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test",null);
 
