@@ -21,7 +21,6 @@ public class DatePagerFragment extends Fragment {
         int position = 3;
     }
 
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View x = inflater.inflate(R.layout.planner_datepager_layout,null);
         pagerYear = (TextView)x.findViewById(R.id.planner_pager_year);

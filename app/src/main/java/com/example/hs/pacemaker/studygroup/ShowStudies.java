@@ -48,7 +48,6 @@ public class ShowStudies extends Fragment {
             }
         });
 
-
         return rootView;
     }
 
