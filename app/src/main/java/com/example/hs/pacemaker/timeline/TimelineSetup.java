@@ -17,6 +17,17 @@ public class TimelineSetup extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_layout,null);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.timeline_setup_layout, null);
+
+       /* GridView gridview=(GridView)rootView.findViewById(R.id.gridView);
+        gridview.setAdapter(new GridAdapter(getActivity()));
+        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getActivity(),""+position,Toast.LENGTH_SHORT).show();
+
+            }
+        });*/
+        return rootView;
     }
 }
