@@ -34,7 +34,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@drawable/images"
+                        android:src="@mipmap/ic_launcher"
                         android:layout_gravity="center_horizontal"
                         android:id="@+id/timeline_profile_img"
                         android:background="#FFFFFF"/>
