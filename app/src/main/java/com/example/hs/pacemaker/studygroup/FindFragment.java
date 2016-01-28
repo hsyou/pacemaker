@@ -32,6 +32,9 @@ public class FindFragment extends Fragment {
         transaction.replace(R.id.find_study_frame, showStudies);
         transaction.commit();
 
+
+
+
         return rootView;
     }
 
@@ -42,7 +45,6 @@ public class FindFragment extends Fragment {
         studyList.add(new StudyObject("영어 면접","분당","매주 토요일", "이런 비가 "));
         studyList.add(new StudyObject("자바","분당","매주 토요일", "저 별을 가져다 너의 두 손에 선물하고 싶어 내 모든걸 담아 저 벼을 가져다 너의 두 손에 "));
         studyList.add(new StudyObject("가장 쉽게 공부할 수 있는 Spring Framework","분당","매주 토요일", "저 별을 가져다"));
-        studyList.add(new StudyObject("뜨개질 스터디", "분당", "매주 토요일", "저 별을 가져다"));
 
         return studyList;
     }

@@ -41,8 +41,9 @@
                 android:background="@color/colorDivide"
                 android:gravity="center_vertical"
                 android:hint="스터디 이름"
+                android:textColorHint="@color/colorLightGray"
                 android:paddingLeft="@dimen/left_pad"
-                android:textColor="@color/colorDarkGray"
+
                 android:textSize="14dp" />
 
 
@@ -81,20 +82,20 @@
                 android:layout_rowSpan="1"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="5"
-                    android:background="@color/colorDivide"
-                    android:gravity="center_vertical"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
                     android:paddingLeft="@dimen/left_pad"
-                    android:text="요일을 선택하세요"
-                    android:textColor="@color/colorDarkGray" />
+                    android:text="요일 선택"
+                    android:textColor="@color/colorDivide" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="5"
+                    android:layout_weight="3"
                     android:background="@color/colorDivide"
                     android:gravity="center_vertical"
                     android:paddingRight="@dimen/left_pad">
@@ -176,17 +177,26 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/r_study_region"
+                    android:id="@+id/r_study_regionBtn"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/one_line"
                     android:layout_column="0"
                     android:layout_rowSpan="1"
-                    android:layout_weight="1"
-                    android:background="@color/colorClear"
+                    android:layout_weight="5"
+                    android:background="@color/colorPrimary"
                     android:paddingLeft="@dimen/left_pad"
                     android:text="지역"
-                    android:textColor="@color/colorDarkGray" />
+                    android:textColor="@color/colorDivide" />
 
+
+                <TextView
+                    android:id="@+id/r_study_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="미정"
+                    android:textColor="@color/colorDarkGray" />
                 <!--<EditText-->
                     <!--android:id="@+id/r_study_region_detail"-->
                     <!--android:layout_width="match_parent"-->
@@ -209,7 +219,6 @@
                 android:layout_columnSpan="2"
                 android:layout_marginBottom="@dimen/divider"
                 android:layout_rowSpan="1"
-                android:background="@color/colorDivide"
                 android:orientation="horizontal">
 
                 <EditText
@@ -218,12 +227,13 @@
                     android:layout_height="@dimen/one_line"
                     android:layout_span="1"
                     android:layout_weight="1"
-                    android:background="@color/colorClear"
-                    android:gravity="center"
+                    android:background="@color/colorDivide"
+                    android:gravity="center_vertical"
                     android:hint="카카오톡 아이디"
                     android:paddingLeft="@dimen/left_pad"
                     android:textColor="@color/colorDarkGray"
-                    android:textColorHint="@color/colorDarkGray"
+                    android:textColorHint="@color/colorLightGray"
+                    android:layout_marginRight="1dp"
                     android:textSize="14dp" />
 
                 <EditText
@@ -232,12 +242,12 @@
                     android:layout_height="@dimen/one_line"
                     android:layout_span="1"
                     android:layout_weight="1"
-                    android:background="@color/colorClear"
-                    android:gravity="center"
+                    android:background="@color/colorDivide"
+                    android:gravity="center_vertical"
                     android:hint="이메일"
                     android:paddingLeft="@dimen/left_pad"
                     android:textColor="@color/colorDarkGray"
-                    android:textColorHint="@color/colorDarkGray"
+                    android:textColorHint="@color/colorLightGray"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -261,7 +271,7 @@
                     android:hint="한 줄 소개(최대 50 Bytes)"
                     android:paddingLeft="@dimen/left_pad"
                     android:textColor="@color/colorDarkGray"
-                    android:textColorHint="@color/colorDarkGray"
+                    android:textColorHint="@color/colorLightGray"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -280,7 +290,7 @@
                     android:hint="스터디 소개"
                     android:padding="@dimen/left_pad"
                     android:textColor="@color/colorDarkGray"
-                    android:textColorHint="@color/colorDarkGray"
+                    android:textColorHint="@color/colorLightGray"
                     android:textSize="14dp" />
             </ScrollView>
 

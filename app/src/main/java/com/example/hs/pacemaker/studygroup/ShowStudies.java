@@ -13,7 +13,6 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.hs.pacemaker.R;
 
@@ -25,10 +24,10 @@ import java.util.List;
 @SuppressLint("ValidFragment")
 public class ShowStudies extends Fragment {
 
-    List<StudyObject> list;
+    List<StudyObject> studyList;
 
     public ShowStudies(List<StudyObject> studyList){
-        this.list = studyList;
+        this.studyList = studyList;
     }
 
     @Nullable
@@ -38,13 +37,16 @@ public class ShowStudies extends Fragment {
 
         GridView gridView = (GridView)rootView.findViewById(R.id.gridView);
 
-        CustomAdapter customAdapter = new CustomAdapter(getContext(), list);
+        CustomAdapter customAdapter = new CustomAdapter(getContext(), studyList);
         gridView.setAdapter(customAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getContext(),"hi", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"hi " + position, Toast.LENGTH_SHORT).show();
+
+
+
             }
         });
 
@@ -113,10 +115,5 @@ public class ShowStudies extends Fragment {
             TextView card_abstract;
         }
     }
-
-
-
-
-
 
 }
