@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.hs.pacemaker.R;
 
@@ -37,15 +36,9 @@ public class FoundStudy extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.found_study, null);
+        View rootView = inflater.inflate(R.layout.find_study_detail, null);
 
-        Button btn = (Button)rootView.findViewById(R.id.back_to_list);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
 
         return rootView;
