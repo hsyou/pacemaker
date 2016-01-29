@@ -70,7 +70,7 @@ public class TabFragment extends Fragment {
             switch (position){
                 case 0 : return new GroupFragment();
                 case 1 : return new FriendFragment();
-                case 2 : return new TimeLineSetup();
+                case 2 : return new TimelineSetup();
             }
             return null;
         }

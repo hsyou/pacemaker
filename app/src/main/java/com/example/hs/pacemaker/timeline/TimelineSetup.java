@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by hs on 2016-01-09.
  */
-public class TimeLineSetup extends Fragment {
+public class TimelineSetup extends Fragment {
 
     private List<GroupObject> list;
     private List<DialogObject> dlist;

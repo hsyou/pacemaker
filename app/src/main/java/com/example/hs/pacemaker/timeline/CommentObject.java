@@ -8,10 +8,10 @@ public class CommentObject {
     private String name;
     private String comment;
 
-
-    public CommentObject(int img, String name) {
+    public CommentObject(int img, String name,String comment) {
         this.img=img;
         this.name = name;
+        this.comment=comment;
 
     }
 
@@ -22,6 +22,9 @@ public class CommentObject {
     public int getImg() {
         return img;
     }
+
+    public String getComment() {
+        return comment;
+    }
 }
 
-}
