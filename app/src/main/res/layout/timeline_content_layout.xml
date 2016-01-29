@@ -1,6 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        app:title="게시글"
+        android:id="@+id/content_toolbar"/>
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_scrollview"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp"
+            android:background="#FFFFFF">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/content_profile_img"
+                android:padding="10dp"
+                android:background="#FFFFFF"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="-4dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_time1"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:background="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="right|center_horizontal"
+                android:id="@+id/content_time2"
+                android:textSize="15sp"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:paddingRight="3dp"
+                android:background="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:background="#FFFFFF"
+                    android:textColorHint="#000000"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+
+                    android:id="@+id/content_text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_hashTag"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/content_img"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#FFFFFF"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="#FFFFFF"
+                    android:id="@+id/content_like_btn"
+                    android:text="Like it"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/content_comment_list"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <ImageView
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_btn_speak_now"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_et"
+            android:hint="comment"
+            android:textColorHint="#F2F2F2"
+            android:layout_weight="0"
+            android:background="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

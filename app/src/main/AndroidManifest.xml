@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".timeline.TimeLineUpload"
             android:windowSoftInputMode="adjustResize"/>
-
+        <activity android:name=".timeline.TimelineContent"
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>

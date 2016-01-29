@@ -20,16 +20,12 @@ import java.util.List;
  * Created by hs on 2016-01-09.
  */
 public class FriendFragment extends Fragment {
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+
     private Button uploadBtn;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.timeline_friend_layout, null);
-
-        //버튼
 
         uploadBtn=(Button)rootView.findViewById(R.id.upload_btn);
         uploadBtn.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +36,6 @@ public class FriendFragment extends Fragment {
             }
         });
 
-        //리사이클러뷰 테스트
         RecyclerView recyclerView=(RecyclerView)rootView.findViewById(R.id.recyclerview);
         LinearLayoutManager layoutManager=new LinearLayoutManager(getActivity());
         recyclerView.setHasFixedSize(true);
@@ -48,13 +43,14 @@ public class FriendFragment extends Fragment {
 
         List<Recycler_item> items=new ArrayList<>();
         Recycler_item[] item=new Recycler_item[5];
-        item[0]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"1234567890asdasdasdasdzxczxczxczxcvbnvbnvbnvbnfghfghfghfghrtyrtyrtyrtyuiouiouiouiojkljkljkljklqweqweqweqwehjweacvbuygrvebgqverwyugbqvrewyugbqecwrybugcqewrybugcqrewygbueqwrygbui","#hash #hash");
-        item[1]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test","#hash #hash");
-        item[2]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test","#hashascascascascascascascascascascasc #hash");
-        item[3]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test",null);
-        item[4]=new Recycler_item(R.drawable.images,R.drawable.images,"id","category","time",1,2,"text test text test",null);
+        item[0]=new Recycler_item(R.mipmap.ic_launcher,R.mipmap.ic_launcher,"id1","category","time",1,2,"1234567890asdasdasdasdzxczxczxczxcvbnvbnvbnvbnfghfghfghfghrtyrtyrtyrtyuiouiouiouiojkljkljkljklqweqweqweqwehjweacvbuygrvebgqverwyugbqvrewyugbqecwrybugcqewrybugcqrewygbueqwrygbui","#hash #hash");
+        item[1]=new Recycler_item(R.mipmap.ic_launcher,R.mipmap.ic_launcher,"id2","category","time",1,2,"text test text test","#hash #hash");
+        item[2]=new Recycler_item(R.mipmap.ic_launcher,R.mipmap.ic_launcher,"id3","category","time",1,2,"text test text test","#hashascascascascascascascascascascasc #hash");
+        item[3]=new Recycler_item(R.mipmap.ic_launcher,R.mipmap.ic_launcher,"id4","category","time",1,2,"text test text test","#hash #hasah #hash #hash #hash #hash #hash #hash #hash #hash");
+        item[4]=new Recycler_item(R.mipmap.ic_launcher,R.mipmap.ic_launcher,"id5","category","time",1,2,"text test text test",null);
 
         for(int i=0;i<5;i++) items.add(item[i]);
+
 
         recyclerView.setAdapter(new RecyclerAdapter(getActivity(),items,R.layout.timeline_friend_layout));
         return rootView;
