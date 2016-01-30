@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.hs.pacemaker.R;
 
@@ -15,6 +16,10 @@ public class ProfileFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_layout, container, false);
+        View rootView = inflater.inflate(R.layout.profile_main_self, container, false);
+
+        ImageView profile_back = (ImageView)rootView.findViewById(R.id.profile_profile_img_back);
+
+        return rootView;
     }
 }
