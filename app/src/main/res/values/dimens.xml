@@ -5,4 +5,7 @@
     <dimen name="one_line">44dp</dimen>
     <dimen name="divider">1dp</dimen>
     <dimen name="left_pad">8dp</dimen>
+
+    <dimen name="font_title">16dp</dimen>
+    <dimen name="font_content">12dp</dimen>
 </resources>

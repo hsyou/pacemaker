@@ -16,7 +16,7 @@
         >
 
         <ImageView
-            android:id="@+id/card_icon"
+            android:id="@+id/item_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -26,7 +26,7 @@
             />
 
         <TextView
-            android:id="@+id/card_name"
+            android:id="@+id/item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="card_name"
@@ -40,7 +40,7 @@
             />
 
         <TextView
-            android:id="@+id/card_region"
+            android:id="@+id/item_region"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="card_region"
@@ -50,7 +50,7 @@
             android:layout_marginTop="4dp"
             />
         <TextView
-            android:id="@+id/card_day"
+            android:id="@+id/item_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="card_day"
@@ -59,7 +59,7 @@
             android:textSize="12dp"
             />
         <TextView
-            android:id="@+id/card_abstract"
+            android:id="@+id/item_abstract"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="card_abstract"

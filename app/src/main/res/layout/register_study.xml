@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,23 +49,41 @@
                 android:layout_rowSpan="1"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/r_study_sub_1"
+                <!--<Button-->
+                <!--android:id="@+id/r_study_sub_1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/colorDivide"-->
+                <!--android:text="1차 과목"-->
+                <!--android:textColor="@color/colorDarkGray" />-->
+                <Spinner
+                    android:id="@+id/r_study_sub1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorDivide"
-                    android:text="1차 과목"
-                    android:textColor="@color/colorDarkGray" />
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="@dimen/divider"
+                    >
+                </Spinner>
 
-                <Button
-                    android:id="@+id/r_study_sub_2"
+                <Spinner
+                    android:id="@+id/r_study_sub2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorDivide"
-                    android:text="2차 과목"
-                    android:textColor="@color/colorDarkGray" />
+                    android:background="@color/colorPrimary"
+                    >
+                </Spinner>
+
+                <!--<Button-->
+                <!--android:id="@+id/r_study_sub2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/colorDivide"-->
+                <!--android:text="2차 과목"-->
+                <!--android:textColor="@color/colorDarkGray" />-->
             </LinearLayout>
 
             <LinearLayout
@@ -191,18 +210,18 @@
                     android:text="미정"
                     android:textColor="@color/colorDarkGray" />
                 <!--<EditText-->
-                    <!--android:id="@+id/r_study_region_detail"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="@dimen/one_line"-->
-                    <!--android:layout_span="1"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:background="@color/colorClear"-->
-                    <!--android:gravity="center"-->
-                    <!--android:hint="세부 장소"-->
-                    <!--android:paddingLeft="@dimen/left_pad"-->
-                    <!--android:textColor="@color/colorDarkGray"-->
-                    <!--android:textColorHint="@color/colorDarkGray"-->
-                    <!--android:textSize="14dp" />-->
+                <!--android:id="@+id/r_study_region_detail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/one_line"-->
+                <!--android:layout_span="1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/colorClear"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="세부 장소"-->
+                <!--android:paddingLeft="@dimen/left_pad"-->
+                <!--android:textColor="@color/colorDarkGray"-->
+                <!--android:textColorHint="@color/colorDarkGray"-->
+                <!--android:textSize="14dp" />-->
 
             </LinearLayout>
 

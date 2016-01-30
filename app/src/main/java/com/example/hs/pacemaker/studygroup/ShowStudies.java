@@ -96,11 +96,11 @@ public class ShowStudies extends Fragment {
                 listViewHolder = new ViewHolder();
                 convertView = layoutinflater.inflate(R.layout.find_study_item, parent, false);
 
-                listViewHolder.card_icon = (ImageView)convertView.findViewById(R.id.card_icon);
-                listViewHolder.card_name = (TextView)convertView.findViewById(R.id.card_name);
-                listViewHolder.card_region = (TextView)convertView.findViewById(R.id.card_region);
-                listViewHolder.card_day = (TextView)convertView.findViewById(R.id.card_day);
-                listViewHolder.card_abstract = (TextView)convertView.findViewById(R.id.card_abstract);
+                listViewHolder.card_icon = (ImageView)convertView.findViewById(R.id.item_icon);
+                listViewHolder.card_name = (TextView)convertView.findViewById(R.id.item_name);
+                listViewHolder.card_region = (TextView)convertView.findViewById(R.id.item_region);
+                listViewHolder.card_day = (TextView)convertView.findViewById(R.id.item_day);
+                listViewHolder.card_abstract = (TextView)convertView.findViewById(R.id.item_abstract);
 
                 convertView.setTag(listViewHolder);
             }else{
